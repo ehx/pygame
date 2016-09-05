@@ -1,7 +1,12 @@
-from test import Mago, Magos
+from player import Player
+from mago import Mage, Mages
 
-magos = Magos()
-eloy = Mago('Eloy', 1, 100, magos)
-franco = Mago('Franco', 1, 50, magos)
+magos = Mages()
+eloy = Mage('Eloy', 2, 100, magos)
+franco = Mage('Franco', 1, 50, magos)
+a = Player()
 
-eloy.poder('fuego', 20, franco, magos)
+eloy.hit('fuego', 20, franco, magos)
+
+Mages.count()
+Player.count()
