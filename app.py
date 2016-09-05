@@ -1,6 +1,7 @@
-from test import Mago
+from test import Mago, Magos
 
-eloy = Mago('Eloy', 1, 100)
-franco = Mago('Franco', 1, 50)
+magos = Magos()
+eloy = Mago('Eloy', 1, 100, magos)
+franco = Mago('Franco', 1, 50, magos)
 
-print(eloy.getVida())
+eloy.poder('fuego', 20, franco, magos)
